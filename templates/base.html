@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <link rel="stylesheet" href="stylesheet.css" type="text/css">
-    <title> {% block title %} {% endblock %}</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static\css\stylesheet.css" >
+    <title> {% block title %} Lumpiang ShangRice {% endblock %}</title>
+   <center> <h1 style="float: center">Lumpiang ShangRice</h1></center>
 </head>
+
 <body>
-    <h1> Lumpiang ShangRice </h1>
+    <link rel="stylesheet" href="static\css\stylesheet.css" >
+    <center> 
+    <ul>
+        <li>
+            <a href= "#"> Product 1</a>
+            <ul class="dropdown">
+                <li> <a href="#"> Expenses </a></li>
+                <li> <a href="#"> Sales </a></li>
+                <li> <a href="#"> Profit </a></li>
+            </ul>
+        </li>
+        
+        <li>
+            <a href= "#"> Product 2</a>
+            <ul class="dropdown">
+                <li> <a href="#"> Expenses </a></li>
+                <li> <a href="#"> Sales </a></li>
+                <li> <a href="#"> Profit </a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href= "#"> Product 3</a>
+            <ul class="dropdown">
+                <li> <a href="#"> Expenses </a></li>
+                <li> <a href="#"> Sales </a></li>
+                <li> <a href="#"> Profit </a></li>
+            </ul>
+        </li>
+    </ul>
+    </center>
     {% block content%}{% endblock %}
 </body>
 </html>
