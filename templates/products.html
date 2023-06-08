@@ -3,8 +3,19 @@
 
 {% block content %}
 <body>  
-    <h4> Product 1 </h4>
-    <p>insert picture ng product 1</p>
+    {% if name == "cheese": %}
+        <h3>Cheese Flavored Lumpiang ShangRice </h3>
+        <img src = "{{ url_for('static', filename='images/cheese.jpg') }}">
+        <h4><a href="/flavors/cheese/cdatabase">Enter</a></h4>
+    {% elif name == "spicy": %}
+        <h3>Spicy Flavored Lumpiang ShangRice </h3>
+        <img src = "{{ url_for('static', filename='images/spicy.jpg') }}">
+        <h4><a href="/flavors/spicy/sdatabase">Enter</a></h4>
+    {% elif name == "normal": %}
+        <h3>Basic Lumpiang ShangRice </h3>
+        <img src = "{{ url_for('static', filename='images/normal.jpg') }}">
+        <h4><a href="/flavors/normal/ndatabase">Enter</a></h4>
+    {% endif %}
 </body>
 
 {% endblock %}
