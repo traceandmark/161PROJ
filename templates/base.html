@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="static\css\stylesheet.css" >
     <title> {% block title %} Lumpiang ShangRice {% endblock %}</title>
-   <center> <h1 style="float: center">Lumpiang ShangRice</h1></center>
+    <center> <h1 style="float: center">Lumpiang ShangRice</h1></center>
 </head>
 
 <body>
@@ -13,33 +13,32 @@
     <center> 
     <ul>
         <li>
-            <a href= "#"> Product 1</a>
+            <a href= "/flavors/normal"> Classic </a>
             <ul class="dropdown">
-                <li> <a href="#"> Expenses </a></li>
-                <li> <a href="#"> Sales </a></li>
-                <li> <a href="#"> Profit </a></li>
+                <li><a href="/flavors/normal/ndatabase/nprofits">Profits</a></li>
+                <li><a href="/flavors/normal/ndatabase/nexpenses">Expenses</a></li>
+                <li><a href="/flavors/normal/ndatabase/nsales">Sales</a></li>
             </ul>
         </li>
         
         <li>
-            <a href= "#"> Product 2</a>
+            <a href= "/flavors/spicy"> Spicy </a>
             <ul class="dropdown">
-                <li> <a href="#"> Expenses </a></li>
-                <li> <a href="#"> Sales </a></li>
-                <li> <a href="#"> Profit </a></li>
+            <ul>
+                <li><a href="/flavors/spicy/sdatabase/sprofits">Profits</a></li>
+                <li><a href="/flavors/spicy/sdatabase/sexpenses">Expenses</a></li>
+                <li><a href="/flavors/spicy/sdatabase/ssales">Sales</a></li>
             </ul>
         </li>
 
         <li>
-            <a href= "#"> Product 3</a>
+            <a href= "/flavors/cheese"> Cheesy </a>
             <ul class="dropdown">
-                <li> <a href="#"> Expenses </a></li>
-                <li> <a href="#"> Sales </a></li>
-                <li> <a href="#"> Profit </a></li>
+                <li><a href="/flavors/cheese/cdatabase/cprofits">Profits</a></li>
+                <li><a href="/flavors/cheese/cdatabase/cexpenses">Expenses</a></li>
+                <li><a href="/flavors/cheese/cdatabase/csales">Sales</a></li>
             </ul>
         </li>
     </ul>
     </center>
     {% block content%}{% endblock %}
-</body>
-</html>
