@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<body>  
+    {% if name3 == "nprofits": %}
+    <h5>Basic Flavor Profits</h5>
+    <ul>
+        <li>View</li>
+        <li>Edit</li>
+        <li>Save</li>
+    </ul>
+
+    {% elif name3 == "nsales": %}
+    <h5>Basic Flavor Sales</h5>
+    <ul>
+        <li>View</li>
+        <li>Edit</li>
+        <li>Save</li>
+    </ul>
+
+    {% elif name3 == "nexpenses": %}
+    <h5>Basic Flavor Expenses</h5>
+    <ul>
+        <li>View</li>
+        <li>Edit</li>
+        <li>Save</li>
+    </ul>
+    
+    {% elif name3 == "cprofits": %}
+    <h5>Cheese Flavor Profits</h5>
+    <ul>
+        <li>View</li>
+        <li>Edit</li>
+        <li>Save</li>
+    </ul>
+
+    {% elif name3 == "csales": %}
+    <h5>Cheese Flavor Sales</h5>
+    <ul>
+        <li>View</li>
+        <li>Edit</li>
+        <li>Save</li>
+    </ul>
+
+    {% elif name3 == "cexpenses": %}
+    <h5>Cheese Flavor Expenses</h5>
+    <ul>
+        <li>View</li>
+        <li>Edit</li>
+        <li>Save</li>
+    </ul>
+ 
+    {% elif name3 == "sprofits": %}
+    <h5>Spicy Flavor Profits</h5>
+    <ul>
+        <li>View</li>
+        <li>Edit</li>
+        <li>Save</li>
+    </ul>
+
+    {% elif name3 == "ssales": %}
+    <h5>Spicy Flavor Sales</h5>
+    <ul>
+        <li>View</li>
+        <li>Edit</li>
+        <li>Save</li>
+    </ul>
+
+    {% elif name3 == "sexpenses": %}
+    <h5>Spicy Flavor Expenses</h5>
+    <ul>
+        <li>View</li>
+        <li>Edit</li>
+        <li>Save</li>
+    </ul>
+
+    {% endif %}
+</body>
+
+{% endblock %}

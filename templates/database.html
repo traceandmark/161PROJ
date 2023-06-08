@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<body>  
+    {% if name2 == "cdatabase": %}
+        <h3>Cheese Flavored Lumpiang ShangRice Database </h3>
+        <p> 
+            <ul>
+                <li><a href="/flavors/cheese/cdatabase/cprofits">Profits</a></li>
+                <li><a href="/flavors/cheese/cdatabase/cexpenses">Expenses</a></li>
+                <li><a href="/flavors/cheese/cdatabase/csales">Sales</a></li>
+              </ul>
+        </p>
+    {% elif name2 == "sdatabase": %}
+        <h3>Spicy Flavored Lumpiang ShangRice Database</h3>
+        <p> 
+            <ul>
+                <li><a href="/flavors/spicy/sdatabase/sprofits">Profits</a></li>
+                <li><a href="/flavors/spicy/sdatabase/sexpenses">Expenses</a></li>
+                <li><a href="/flavors/spicy/sdatabase/ssales">Sales</a></li>
+              </ul>
+        </p>
+    {% elif name2 == "ndatabase": %}
+        <h3>Basic Lumpiang ShangRice Database</h3>
+        <p> 
+            <ul>
+                <li><a href="/flavors/normal/ndatabase/nprofits">Profits</a></li>
+                <li><a href="/flavors/normal/ndatabase/nexpenses">Expenses</a></li>
+                <li><a href="/flavors/normal/ndatabase/nsales">Sales</a></li>
+              </ul>
+        </p>
+    {% endif %}
+</body>
+
+{% endblock %}
