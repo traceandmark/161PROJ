@@ -1,12 +1,25 @@
 {% extends 'base.html' %}
+<meta charset="UTF-8">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/home.css')}}"/>
 
 {% block content %}
 <body>
-
-    <h2>  Welcome to Lumpiang ShangRice Database! Feel free to explore this website to see how functionable it is! (Gutom ka na ba?)</h2>
-
+    <div class = "welc"> 
+         <center><ul class="wel">  <h2> Welcome to Lumpiang ShangRice Database! Feel free to explore this website to see how functionable it is! </h2> <h3> (Gutom ka na ba?) </h3> </ul> </center>
+         
+        </div>
+    <div class="row">
+        <div class="column">
+          <img src="static/images/shang1.jpg" alt="cheese" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="static/images/shang2.jpg" alt="spicy" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="static/images/shang3.png" alt="normal" style="width:100%">
+        </div>
+    </div>
     
 </body>
 
 {% endblock %}
-
