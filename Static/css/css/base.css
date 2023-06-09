@@ -45,10 +45,34 @@ ul li:hover ul.dropdown {
     display: block;
 }
 
-.logo {
-    margin-left: 20%;
-   }
+.nav {
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+}
 
 .header {
- margin-left: 20%;
+ float: left;
+ padding: 0px;
 }
+
+.title {
+    float: left;
+
+}
+
+.right {
+    text-align: right;
+    display: block;
+    margin-left: 10px;
+   }
+
+.fix img{
+position: absolute;
+margin-top: -33px;
+margin-left: -33px;
+}
+.Bname{
+margin-left: 75px;
+color: #FFF;
+}
+   
