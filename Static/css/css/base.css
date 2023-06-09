@@ -3,11 +3,12 @@ padding: 0;
 margin-left: 15;
 margin-right: 15;
 font-family: Cursive;
+
 }
 
 ul {
 list-style: none;
-background: #f59910;
+background: #f18f0f;
 }
 
 ul li {
@@ -18,10 +19,11 @@ ul li {
 ul li a{
     display: block;
     padding: 25px 25px;
-    color: #FFF;
+    color: #a81c1c;
     text-decoration: none;
     text-align: center;
-    font-size:20px; 
+    font-size:22px; 
+    font-weight: bold;
 }
 ul li ul.dropdown li{
     display: block;
@@ -30,15 +32,15 @@ ul li ul.dropdown li{
 
 ul li ul.dropdown {
     width: 125%;
-    padding: 25px 25px;
-    background: #f59910;
+    padding: 10px 10px;
+    background: #f18f0fc9;
     position: absolute;
     z-index: 999;
     display: none;
 }
 
 ul li a:hover {
-    background: #112C66
+    background: #6f0c0c
 }
 
 ul li:hover ul.dropdown {
@@ -47,12 +49,14 @@ ul li:hover ul.dropdown {
 
 .nav {
     display: block;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Cursive';
 }
 
 .header {
  float: left;
  padding: 0px;
+ 
+
 }
 
 .title {
@@ -68,11 +72,10 @@ ul li:hover ul.dropdown {
 
 .fix img{
 position: absolute;
-margin-top: -33px;
-margin-left: -33px;
+margin-top: -31.5px;
+margin-left: -20px;
 }
 .Bname{
 margin-left: 75px;
-color: #FFF;
+color: #a81c1c;
 }
-   
