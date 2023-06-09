@@ -2,19 +2,52 @@
 
 
 {% block content %}
+
+<style>
+
+div.polaroid {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    }
+    
+div.container {
+    text-align: center;
+    padding: 5px 10px;
+    }
+</style>
+</head>
+
 <body>  
     {% if name == "cheese": %}
-        <h3>Cheesy Flavored Lumpiang ShangRice </h3>
-        <img src = "{{ url_for('static', filename='images/cheese.jpg') }}">
+    <div class="polaroid">
+        <img src = "{{ url_for('static', filename='images/cheese.jpg') }}"  width="879" height="475">
+        <div class="container">
+        <h3>Cheesy Lumpiang ShangRice</h3>
         <h4><a href="/flavors/cheese/cdatabase">Enter</a></h4>
+        </div>
+    </div>
     {% elif name == "spicy": %}
-        <h3>Spicy Flavored Lumpiang ShangRice </h3>
-        <img src = "{{ url_for('static', filename='images/spicy.jpg') }}">
+    <div class="polaroid">
+        <img src = "{{ url_for('static', filename='images/spicy.jpg') }}"  width="879" height="475">
+        <div class="container">
+        <h3>Spicy Lumpiang ShangRice</h3>
         <h4><a href="/flavors/spicy/sdatabase">Enter</a></h4>
+        </div>
+    </div>
     {% elif name == "normal": %}
-        <h3>Classic Lumpiang ShangRice </h3>
-        <img src = "{{ url_for('static', filename='images/normal.jpg') }}">
+    <div class="polaroid">
+        <img src = "{{ url_for('static', filename='images/normal.jpg') }}" width="879" height="475" >
+        <div class="container">
+        <h3>Classic Lumpiang ShangRice</h3>
         <h4><a href="/flavors/normal/ndatabase">Enter</a></h4>
+        </div>
+    </div>
+
     {% endif %}
 </body>
 
