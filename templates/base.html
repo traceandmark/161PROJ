@@ -3,42 +3,48 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="static\css\stylesheet.css" >
+    <link rel="stylesheet" href="{{url_for('static', filename='css/base.css')}}"/>
+    
+    
     <title> {% block title %} Lumpiang ShangRice {% endblock %}</title>
-    <center> <h1 style="float: center">Lumpiang ShangRice</h1></center>
+   <center><div class="header"> <h1 style="float: right"> <div class = "logo"> </div>Lumpiang ShangRice</h1></center>
+            <h1 style="float: center"> <img src = "{{ url_for('static', filename='images/logo.png') }}" width = "70" height="70"></h1>
+        </div>
 </head>
 
 <body>
-    <link rel="stylesheet" href="static\css\stylesheet.css" >
+    <link rel="stylesheet" href="static\css\base.css" >
     <center> 
     <ul>
         <li>
-            <a href= "/flavors/normal"> Classic </a>
+            <a href= "/flavors/normal"> Classic</a>
             <ul class="dropdown">
-                <li><a href="/flavors/normal/ndatabase/nprofits">Profits</a></li>
-                <li><a href="/flavors/normal/ndatabase/nexpenses">Expenses</a></li>
-                <li><a href="/flavors/normal/ndatabase/nsales">Sales</a></li>
+                <li> <a href="/flavors/normal/ndatabase/nexpenses"> Expenses </a></li>
+                <li> <a href="/flavors/normal/ndatabase/nsales"> Sales </a></li>
+                <li> <a href="/flavors/normal/ndatabase/nprofits"> Profits </a></li>
             </ul>
         </li>
         
         <li>
-            <a href= "/flavors/spicy"> Spicy </a>
+            <a href= "/flavors/spicy"> Spicy</a>
             <ul class="dropdown">
-            <ul>
-                <li><a href="/flavors/spicy/sdatabase/sprofits">Profits</a></li>
-                <li><a href="/flavors/spicy/sdatabase/sexpenses">Expenses</a></li>
-                <li><a href="/flavors/spicy/sdatabase/ssales">Sales</a></li>
+                <li> <a href="/flavors/spicy/sdatabase/sexpenses"> Expenses </a></li>
+                <li> <a href="/flavors/spicy/sdatabase/ssales"> Sales </a></li>
+                <li> <a href="/flavors/spicy/sdatabase/sprofits"> Profit </a></li>
             </ul>
         </li>
 
         <li>
-            <a href= "/flavors/cheese"> Cheesy </a>
+            <a href= "/flavors/cheese"> Cheesy</a>
             <ul class="dropdown">
-                <li><a href="/flavors/cheese/cdatabase/cprofits">Profits</a></li>
-                <li><a href="/flavors/cheese/cdatabase/cexpenses">Expenses</a></li>
-                <li><a href="/flavors/cheese/cdatabase/csales">Sales</a></li>
+                <li> <a href="/flavors/cheese/cdatabase/cexpenses"> Expenses </a></li>
+                <li> <a href="/flavors/cheese/cdatabase/csales"> Sales </a></li>
+                <li> <a href="/flavors/cheese/cdatabase/cprofits"> Profit </a></li>
             </ul>
         </li>
+
     </ul>
     </center>
     {% block content%}{% endblock %}
+</body>
+</html>
