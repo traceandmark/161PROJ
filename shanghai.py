@@ -11,14 +11,6 @@ def flavors(shangrice_flavor):
     flavor = shangrice_flavor
     return render_template("products.html", name = flavor )
 
-@app.route('/menu')
-def menu():
-    return render_template("menu.html")
-
-@app.route('/help')
-def help():
-    return render_template("help.html")
-
 @app.route('/flavors/<shangrice_flavor>/<database_flavor>')
 def database(shangrice_flavor,database_flavor):
     flavor = shangrice_flavor
@@ -34,5 +26,4 @@ def databasetype(shangrice_flavor,database_flavor,database_type):
 
 if __name__ == "__main__":
     app.run(debug=True)
-
 
